@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Javascript</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div id="root" >Not Rendered</div> 
+        <!-- <div id="container">
+            <h1>Heading1</h1>
+            <h2>Heading2</h2>
+        </div> -->
+
+
+<!-- using Javascript -->
+<!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Here is yours offer letter Nidhi!";
+        const root1 = document.getElementById("root");
+        root1.appendChild(heading);
+</script> -->
+
+
+
+<!-- // very lame way of installing react inside my server using CDN
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+//instead do it using npm and npx -->
+
+
+<script type="module"  src="App.js"></script>
+<!-- <script>  // do it inside app.js
+    
+    // passing no child:
+    // const heading = React.createElement("h1",{},"Here is your's offer letter Nidhi!");
+
+    // passing multiple children 
+    const heading1 = React.createElement(
+        "h1",
+        {
+            id: "title",
+        },
+        "Here is Nidhi -  "
+    );
+    const heading2 = React.createElement(
+        "h2",
+        {
+            id: "title",
+        },
+        "Hope u doing well "
+    );
+    // const container = React.createElement(       //u can use same name as well as different too!!
+    const result = React.createElement(
+        "div",
+        {
+            id: "container",
+        },
+        [heading1,heading2]
+    );
+    const root1 = ReactDOM.createRoot(document.getElementById("root"));
+    // root1.render(container);
+    root1.render(result);
+</script> -->
+</body>
+</html>
